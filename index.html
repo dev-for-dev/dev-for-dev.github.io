@@ -1,24 +1,50 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-sacle=1.0">
     <title>André Santos | Portfolio</title>
     <meta name="description" content="Portifolio André Santos Graduando em Analise e Desenvolvimento de Sistemas">
 
-    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
 <header class="header">
+    <nav class="header__nav">
+        <ul class="menu menu--principal">
+            <li class="menu__item">
+                <a class="menu__link active" href="#home">
+                    <span class="menu__text">Home</span>
+                </a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href="#projetos">
+                    <span class="menu__text">Projetos</span>
+                </a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href="#sobre">
+                    <span class="menu__text">Sobre</span>
+                </a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href="#contato">
+                    <span class="menu__text">Contato</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
     <div class="header__brand">
-        <img class="brand__logo" src="assets/img/dev.png" alt="Logo Dev">
+        <img class="brand__logo" src="assets/images/dev.png" alt="Logo Dev">
+    </div>
+    <div class="header__toggle">
+        <i id="toggleTheme" class="bi bi-sun"></i>
     </div>
 
-    <i id="toggleTheme" class="bi bi-sun"></i>
 </header>
-<nav>
+<nav class="nav--mobile">
     <ul class="menu menu--mobile">
         <li class="menu__item">
             <a class="menu__link active" href="#home">
@@ -46,6 +72,13 @@
         </li>
     </ul>
 </nav>
-<h1>André Santos</h1>
+<main></main>
+<footer class="footer">
+    <p class="footer__direitos">
+        © 2025. Todos os Direitos Reservados. André Santos. Desenvolvido por&nbsp;<a href="https://github.com/dev-for-dev">DevForDev</a>.
+    </p>
+</footer>
+
+<script src="assets/js/scripts.js"></script>
 </body>
 </html>
